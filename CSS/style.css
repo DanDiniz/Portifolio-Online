@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+/**BOOTS CSS**/
+
+.center{
+    max-width: 1230px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+.W33{
+    width: 33.3%;  
+    padding: 0 10px; 
+}
+.W50{
+    width: 50%;
+    padding: 0 2%;
+}
+.left{
+    float: left;
+}
+.rigth{
+    float: right;
+}
+.clear{
+    clear: both;
+}
+/***ESTILIZAÇÃO SITE***/
+header{
+    background-color: rgb(137, 194, 80);
+    padding: 20px 0;
+    position: static;
+    transition: 0.2s linear;
+    top: -50px;
+}
+.fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0px 0px 5px #ddd;
+    transition: 0.2s linear;
+}
+.logo a{
+    text-decoration: none;
+        color: white;
+}
+.logo{
+    font-size: 23px;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+.mobile{
+    display: none;
+}
+nav.desktop ul{
+    list-style-type: none;
+    position: relative;
+    top: 6px;
+}
+nav.desktop li{
+    font-weight: lighter;
+    font-size: 15px;
+    padding: 0 30px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+nav.desktop a{
+    color: white;
+    text-decoration: none;
+}
+section.banner-princ{
+    width: 100%;
+    height: 500px;
+    background-image: url(https://static.scientificamerican.com/sciam/cache/file/1FCF0242-35AD-4E97-9558FBD4278568CD_source.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.overplay{
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(51,51,51, 0.7);
+}
+section.banner-princ form{
+    z-index: 2;
+    width: 98%;
+    max-width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+section.banner-princ form h2{
+    color: white;
+    font-weight: 300;
+    font-size: 40px;
+    text-align: center;
+}
+section.description-autor{
+    padding: 30px 0;
+}
+section.description-autor h2{
+    font-size: 30px;
+    font-weight: 400px;
+    color: #444;
+}
+section.description-autor p{
+    font-size: 16px;
+    color: #444;
+    margin-top: 15px;
+    font-weight: 300px;
+}
+section.competencias{
+    padding: 40px 0;
+    background: #E2E2E2;
+}
+section.competencias h2{
+    font-size: 39px;
+    font-weight: 400px;
+    color: #444;
+    text-align: center;
+}
+.box-competencias{
+    margin: 20px 0;
+    padding: 0 30px;
+    text-align: center;
+}
+.box-competencias h3{
+    font-size: 40px;
+    text-align: center;
+    color: #444;
+}
+.box-competencias h4{
+    font-size: 20px;
+    text-align: center;
+    color: #444;
+}
+.box-competencias p{
+    color: #444;
+    font-size: 15px;
+    margin-top: 10px;
+}
+section.service{
+    padding: 40px 0;
+    background-color: rgb(137, 194, 80);
+}
+section.service h2{
+    font-size: 39px;
+    font-weight: 400px;
+    color: rgb(77, 77, 77);
+    text-align: center;
+}
+footer{
+    padding: 10px 0;
+    background-color: rgb(115, 161, 69);
+}
+footer p{
+    margin: 5px;
+    color: #444;
+    text-align: center;
+}
+
+footer p a{
+    text-decoration: none;
+    color: #444;
+}
+footer i{
+    width: 25px;
+}
+section.error404{
+    padding: 40px 0;
+}
+
+@media screen and (max-width: 768px){
+    img{
+        float: none !important; 
+        display: block;
+        margin: 0 auto;
+
+    }
+    .W50{
+        width: 100%;
+        padding: 20px;
+    }
+    .W33{
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    nav.desktop{
+        display: none;
+    }   
+    nav.mobile{
+        display: block;
+    }
+    nav.mobile ul{
+        top: 70px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        display: none;
+        z-index: 3;
+    }
+    nav.mobile li{
+        font-weight: 300px;
+        width: 100%;
+        display: block;
+        background: white;
+        font-size: 17px;
+        border-bottom: 1px solid #ccc;
+        padding: 7px 0;
+    }
+    nav.mobile li a{
+        display: block;
+        color: #444;
+        text-decoration: none;
+    }
+    .button-menu-mbolie{
+        font-size: 24px;
+        color: white;
+        font-weight: lighter;
+    }
+
+}
