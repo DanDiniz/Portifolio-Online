@@ -1,3 +1,3 @@
 <?php
 
-    define('INCLUDE_PATH','http://localhost/PortifolioOn/');
+    define('INCLUDE_PATH','https://dandiniz.github.io/Portifolio-Online/');
