@@ -102,9 +102,10 @@ section.banner-princ form{
 }
 section.banner-princ form h2{
     color: white;
-    font-weight: 300;
+    font-weight: lighter;
     font-size: 40px;
     text-align: center;
+    border: 1px solid white;
 }
 section.description-autor{
     padding: 30px 0;
